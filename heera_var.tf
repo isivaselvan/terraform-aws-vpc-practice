@@ -7,3 +7,7 @@ variable "var_subnet_cidr" {
   type        = string
 }
 
+variable "var_available_zone" {
+type  = string
+}
+
