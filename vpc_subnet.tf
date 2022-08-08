@@ -22,6 +22,7 @@ resource "aws_subnet" "web_subnet" {
   tags = {
     Name = "web_subnet"
   }
+}  
 #4.creatingroute table
 resource "aws_route_table" "web_route_table" {
   vpc_id = aws_vpc.web_vpc.id
