@@ -11,3 +11,6 @@ variable "var_available_zone" {
 type  = string
 }
 
+variable "instance_type" {}
+
+variable "ami" {}
