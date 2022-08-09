@@ -91,5 +91,12 @@ resource "aws_security_group" "web_allow_http_ssh" {
   tags = {
     Name = "allow_web_ssh"
   }
-}  
+}
+
+module "instance-practice" {
+  source  = "app.terraform.io/git-vpc-instance-demo/instance-practice/aws"
+  version = "1.0.0"
+  # insert required variables here
+  subnet_id = aws_subnet.web_subnet.id
+}
   
