@@ -98,5 +98,7 @@ module "instance-practice" {
   version = "1.0.0"
   # insert required variables here
   subnet_id = aws_subnet.web_subnet.id
+  instance_type = var.instance_type
+  ami = var.ami
 }
   
